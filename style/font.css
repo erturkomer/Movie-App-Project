@@ -1,0 +1,40 @@
+
+.card-container .card span{
+    font-size: clamp(15px, 3.5vw, 30px);
+}
+
+.card-container .card h1{
+    font-size: clamp(15px, 3.5vw, 30px);
+}   
+
+.middle-container .bt-content p, .top-section .bt-content p{
+    /* font-size: clamp(8px, 2vw, 20px); */
+    color: rgba(255, 255, 255, 0.767);
+    letter-spacing: 1px;
+}
+
+main .container-center .search-container button span, .quiz-content .search-container button span{
+    font-size: clamp(10px,3vw, 20px);
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+main .container-center h1{
+    font-size: clamp(18px, 8vw, 55px);
+    font-weight: bold;
+    margin: 0;
+}
+
+main .container-center h3{
+    font-size: clamp(12px, 4.5vw, 26px);
+    margin: 30px;
+    margin-bottom: 12.5px;
+}
+
+.column p{
+    font-size:  clamp(6px, 2.5vw, 18px);
+}
+
+main .container-center .search-container button, .quiz-content .search-container button{
+    font-size: clamp(8px,3vw, 16px);
+}

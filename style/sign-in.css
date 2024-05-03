@@ -1,0 +1,112 @@
+*{
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    color: black;
+}
+
+.parent-content{
+    background: url(../assets/image/background.jpg) no-repeat center/cover;
+    height: 100%;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.884);
+    /* border-bottom: 5px solid rgba(59, 59, 59, 0.39); */
+    height: 100%;
+    flex-direction: column;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 50%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.685);
+    border: 5px solid #dd1012;
+    overflow: hidden;
+}
+
+.lg-button{
+    margin-top: 25px;
+    width: 125px;
+    height: 30px;
+    background: #dd1012;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2.5px;
+    transition: all 62.5ms linear;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lg-button:hover{
+    transform: scale(0.96);
+}
+
+
+.login-form h1{
+    text-align: center;
+    /* border-bottom: 2px solid #3035334f; */
+}
+
+.lg-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lg-center input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3035334f;
+    width: 90%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.lg-bottom{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lg-bottom button{
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    background: #dd1012;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* .responsive-box {
+    width: 50%;
+    max-width: 400px;
+    height: 0;
+    padding-bottom: 75%;
+    background-color: #ff0000;
+    position: relative;
+} */
