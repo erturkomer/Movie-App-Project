@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/icon/icon.png" sizes="300x300" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="parent-content">
+        <div class="overlay">
+            <header>
+                <nav>
+                    <div class="navbar-container">
+                        <a href="en.html">
+                            <img src="assets/image/resim.png" alt="logo bulunamadi." class="logo">
+                        </a>
+                        <div>
+                            <i class="fa-solid fa-globe"
+                            style="position: absolute; margin: 6px; margin-top: 7px; margin-left: 6px; color: rgb(255, 255, 255);"></i>
+                            <select class="selects" onchange="dilDegistir()">
+                                <option value="tr">Turkish</option>
+                                <option value="en">English</option>
+                            </select>
+                            <a href="sign-in.html">
+                                <button>Üye-ol</button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main>
+                <div class="container-center">
+                    <h1>Sınırsız film, dizi ve<br>çok daha fazlası</h1>
+                    <h3>İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin.</h3>
+                    <p>İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak için tek yapmanız gereken e-posta<br>adresinizi girmek.</p>
+
+                    <div class="search-container">
+                        <div class="text-left"></div>
+                        <input type="text" placeholder="Email adress">
+                        <button>Başlayın <span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <section>
+        <div class="top-section ts-1" style="border-top: 7px solid #303533">
+            <div class="bt-content">
+                <h1>Televizyonunuzda izleyin.</h1>
+                <p>Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV,<br>Blu-ray oynatıcılar ve daha fazlasında seyredin.</p>
+            </div>
+            <div class="bt-img-container">
+                <img src="assets/image/uzay.jpg " alt="img bulunamadi.">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="middle-container md-1">
+            <div class="bt-img-container">
+                <img src="assets/image/zyro-image (1).png" alt="img bulunamadi.">
+            </div>
+            <div class="bt-content">
+                <h1>Çevrimdışı izlemek için<br>içerikleri indirin</h1>
+                <p>En sevdiğiniz içerikleri kolayca kaydedin ve her<br>zaman izleyecek bir şeyleriniz olsun.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="middle-container md-2">
+            <div class="bt-content">
+                <h1>İstediğiniz her yerde<br>izleyin.</h1>
+                <p>Telefonda, tablette, bilgisayarda, televizyonda sınırsız<br>film ve dizi izleyin.
+                </p>
+            </div>
+            <div class="bt-img-container">
+                <img src="assets/image/zyro-image (2).png" alt="img bulunamadi.">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="quiz-section" style="border-bottom: 7px solid #303533">
+            <h1 id="qz-h1">Sıkça Sorulan Sorular</h1>
+            <div class="card-container">
+                <div class="card" onclick="toggleCard(0)">
+                    <h1>Movie App nedir?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+
+                </div>
+
+                <div class="card" onclick="toggleCard(1)">
+                    <h1>Movie App maliyeti nedir?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+
+                <div class="card-content">
+                </div>
+
+                <div class="card" onclick="toggleCard(2)">
+                    <h1>Nerede izleyebilirim?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+
+                </div>
+                <div class="card" onclick="toggleCard(3)">
+                    <h1>Nasıl iptal ederim?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+                </div>
+                <div class="card" onclick="toggleCard(4)">
+                    <h1>Movie App'te ne izleyebilirim?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+
+                </div>
+            </div>
+            <div class="quiz-content">
+                <p>İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak için tek yapmanız gereken e-posta<br>adresinizi girmek.</p>
+                <div class="search-container">
+                    <div class="text-left"></div>
+                    <input type="text" placeholder="Email adress">
+                    <button>Başlayın <span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <p style="padding-bottom: 20px;">Sorularınız mı var? 0800-800-800 numaralı telefonu arayın</p>
+                <p>SSS</p>
+                <p>Yatırımcı İlişkileri</p>
+                <p>Kullanım Koşulları</p>
+                <p>Bize Ulaşın</p>
+                <i class="fa-solid fa-globe" style="position: absolute; margin: 6px; margin-top: 12px; margin-left: 10px;"></i>
+                <select class="select" onchange="dilDegistir2()">
+                    <option value="tr">Turkish</option>
+                    <option value="en">English</option>
+                </select>
+                <p>MovieApp Türkiye</p>
+            </div>
+            <div class="column">
+                <p>Yardım Merkezi</p>
+                <p>İş İmkanları</p>
+                <p>Gizlilik</p>
+                <p>Hız Testi</p>
+            </div>
+            <div class="column">
+                <p>Hesap</p>
+                <p>Hediye Kartı Kullan</p>
+                <p>Çerez Tercihleri</p>
+                <p>Yasal Hükümler</p>
+            </div>
+            <div class="column">
+                <p>Medya Merkezi</p>
+                <p>İzleme Yolları</p>
+                <p>Kurumsal Bilgiler</p>
+                <p>Sadece MovieApp'de</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

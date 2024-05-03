@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/icon/icon.png" sizes="300x300" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="parent-content">
+        <div class="overlay">
+            <header>
+                <nav>
+                    <div class="navbar-container">
+                        <a href="en.html">
+                            <img src="assets/image/resim.png" alt="logo bulunamadi." class="logo">
+                        </a>
+                        <div>
+                            <i class="fa-solid fa-globe"
+                            style="position: absolute; margin: 6px; margin-top: 7px; margin-left: 6px; color: rgb(255, 255, 255);"></i>
+                            <select class="selects" onchange="dilDegistir('headers')">
+                                <option value="en">English</option>
+                                <option value="tr">Turkish</option>
+                            </select>
+                            <a href="sign-in.html">
+                                <button>Sign-in</button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main>
+                <div class="container-center">
+                    <h1>Unlimited movies, TV<br>shows, and more.</h1>
+                    <h3>Watch anywhere. Cancel anytime.</h3>
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+                    <div class="search-container">
+                        <div class="text-left"></div>
+                        <input type="text" placeholder="Email adress">
+                        <button>Get started <span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <section>
+        <div class="top-section ts-1" style="border-top: 7px solid #303533">
+            <div class="bt-content">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on Smart TVs, Playstion, Xbox, Chromecast, Apple TV, Blu-ray players,<br>and more.</p>
+            </div>
+            <div class="bt-img-container">
+                <img src="assets/image/uzay.jpg " alt="img bulunamadi.">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="middle-container md-1">
+            <div class="bt-img-container">
+                <img src="assets/image/zyro-image (1).png" alt="img bulunamadi.">
+            </div>
+            <div class="bt-content">
+                <h1>Dowload your shows to watch<br>offline.</h1>
+                <p>Save your favorites easily and always have something to<br>watch.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="middle-container md-2">
+            <div class="bt-content">
+                <h1>Watch everywhere.</h1>
+                <p>Stream unlimited movies and TV shows on your phone,<br>tablet, laptop, and TV without paying more.
+                </p>
+            </div>
+            <div class="bt-img-container">
+                <img src="assets/image/zyro-image (2).png" alt="img bulunamadi.">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="quiz-section" style="border-bottom: 7px solid #303533">
+            <h1 id="qz-h1">Frequently Asked Questions</h1>
+            <div class="card-container">
+                <div class="card" onclick="toggleCard(0)">
+                    <h1>What is Movie App</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+                </div>
+
+                <div class="card" onclick="toggleCard(1)">
+                    <h1>How much does MovieApp cost?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+
+                <div class="card-content">
+                </div>
+
+                <div class="card" onclick="toggleCard(2)">
+                    <h1>Where can I watch?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+
+                </div>
+                <div class="card" onclick="toggleCard(3)">
+                    <h1>How do I cancel?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+                </div>
+                <div class="card" onclick="toggleCard(4)">
+                    <h1>What can I watch on MovieApp?</h1>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="card-content">
+
+                </div>
+            </div>
+            <div class="quiz-content">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="search-container">
+                    <div class="text-left"></div>
+                    <input type="text" placeholder="Email adress">
+                    <button>Get started <span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <p style="padding-bottom: 20px;">Questions? Contact us.</p>
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+                <i class="fa-solid fa-globe"
+                    style="position: absolute; margin: 6px; margin-top: 12px; margin-left: 10px;"></i>
+                <select class="select" onchange="dilDegistir2()">
+                    <option value="en">English</option>
+                    <option value="tr">Turkish</option>
+                </select>
+                <p>MovieApp Tailwan</p>
+            </div>
+            <div class="column">
+                <p>Help Center</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+                <p>Legsi Notices</p>
+            </div>
+            <div class="column">
+                <p>Account</p>
+                <p>Ways to Watch</p>
+                <p>Corporate Information</p>
+                <p>MovieApp Originals</p>
+            </div>
+            <div class="column">
+                <p>Media Center</p>
+                <p>Terms of Use</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
