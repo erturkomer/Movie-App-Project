@@ -1,2 +1,2 @@
 # Movie-App-Project
-![MovieApp](movieapp1.png)
+![MovieApp](moviapp1.png)
